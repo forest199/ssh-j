@@ -5,6 +5,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+
+//@EntityAndTab
 @Entity
 @Table
 public class Hello {
@@ -30,6 +32,9 @@ public class Hello {
 	public void setName(String name) {
 		this.name = name;
 	}
-	
-	
+
+	@Override
+	public String toString() {
+		return "Hello [id=" + id + ", name=" + name + "]";
+	}
 }
